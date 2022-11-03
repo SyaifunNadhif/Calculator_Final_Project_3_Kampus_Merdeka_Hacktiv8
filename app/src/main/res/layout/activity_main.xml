@@ -85,7 +85,7 @@
                 android:id="@+id/btnClear"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1.5"
+                android:layout_weight="1"
                 android:textStyle="bold"
                 android:backgroundTint="@color/white"
                 android:textColor="@color/red"
@@ -93,28 +93,42 @@
                 android:layout_marginHorizontal="2dp"
                 android:text="C"/>
 
-<!--            <Button-->
-<!--                android:id="@+id/btnKurung"-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:layout_weight="1"-->
-<!--                android:textStyle="bold"-->
-<!--                android:backgroundTint="@color/white"-->
-<!--                android:textColor="@color/primary"-->
-<!--                android:textSize="@dimen/btnTextSize"-->
-<!--                android:layout_marginHorizontal="2dp"-->
-<!--                android:text="( )"/>-->
+
 
             <ImageButton
                 android:id="@+id/btnBackspace"
                 android:layout_width="0dp"
                 android:src="@drawable/ic_backspace"
                 android:layout_height="match_parent"
-                android:layout_weight="1.5"
-                android:backgroundTint="@color/primary"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
                 android:textColor="@color/white"
                 android:textSize="@dimen/btnTextSize"
                 android:layout_marginHorizontal="2dp" />
+
+            <Button
+                android:id="@+id/btnPersen"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/btnTextSize"
+                android:layout_marginHorizontal="2dp"
+                android:text="%"/>
+
+            <Button
+                android:id="@+id/btnBagi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:text="/"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:layout_marginHorizontal="2dp"
+                android:textSize="@dimen/btnTextSize" />
 
 
 
@@ -318,33 +332,19 @@
                 android:textSize="@dimen/btnTextSize"
                 android:text="0"/>
 
-<!--            <Button-->
-<!--                android:id="@+id/btnPangkat"-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:layout_weight="1"-->
-<!--                android:textStyle="bold"-->
-<!--                android:backgroundTint="@color/white"-->
-<!--                android:textColor="@color/primary"-->
-<!--                android:textSize="@dimen/btnTextSize"-->
-<!--                android:layout_marginHorizontal="2dp"-->
-<!--                android:text="^"/>-->
-
-
-
-
-
             <Button
-                android:id="@+id/btnBagi"
+                android:id="@+id/btn000"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:backgroundTint="@color/white"
-                android:text="/"
                 android:textStyle="bold"
-                android:textColor="@color/primary"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textSize="14dp"
                 android:layout_marginHorizontal="2dp"
-                android:textSize="@dimen/btnTextSize" />
+                android:text="000"/>
+
+
 
             <Button
                 android:id="@+id/btnSamadengan"

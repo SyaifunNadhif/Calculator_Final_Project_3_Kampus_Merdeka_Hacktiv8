@@ -164,10 +164,6 @@ public class MainActivity extends AppCompatActivity {
                 dot_inserted = true;
             }
 
-
-
-
-
             displayOperator();
         });
 
