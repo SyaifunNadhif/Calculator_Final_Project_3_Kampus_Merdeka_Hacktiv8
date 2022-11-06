@@ -95,10 +95,10 @@ public class MainActivity extends AppCompatActivity {
                         result = Double.toString(Double.parseDouble(tokens[0]) - Double.parseDouble(tokens[2]));
                         break;
                     case 'x':
-
+                        result = Double.toString(Double.parseDouble(tokens[0]) * Double.parseDouble(tokens[2]));
                         break;
                     case '/':
-
+                        result = Double.toString(Double.parseDouble(tokens[0]) / Double.parseDouble(tokens[2]));
                         break;
                 }
                 displayResult();
@@ -139,11 +139,35 @@ public class MainActivity extends AppCompatActivity {
         });
 
         binding.btnKali.setOnClickListener(v -> {
+            dot_inserted = false;
+            if (!operator.isEmpty()){
+                if (operator.substring(operator.length()-1, operator.length()).equals(".")){
+                    backspace();
+                }
+            }
 
+            if (operator_inserted == false){
+                operator = operator + " x ";
+                operator_inserted = true;
+                equals = true;
+            }
+            displayOperator();
         });
 
         binding.btnBagi.setOnClickListener(v -> {
+            dot_inserted = false;
+            if (!operator.isEmpty()){
+                if (operator.substring(operator.length()-1, operator.length()).equals(".")){
+                    backspace();
+                }
+            }
 
+            if (operator_inserted == false){
+                operator = operator + " / ";
+                operator_inserted = true;
+                equals = true;
+            }
+            displayOperator();
         });
 
 
