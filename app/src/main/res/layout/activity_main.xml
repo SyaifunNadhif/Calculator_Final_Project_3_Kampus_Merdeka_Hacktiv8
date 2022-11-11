@@ -38,8 +38,11 @@
             android:layout_gravity="end"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="30dp"
+            android:text="0"
+            android:textAlignment="viewEnd"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/resultTv" />
 
         <TextView
             android:id="@+id/resultTv"
@@ -49,21 +52,21 @@
             android:layout_alignParentRight="true"
             android:layout_gravity="end"
             android:layout_marginEnd="30dp"
-            android:text="0"
-            android:textColor="@color/white"
-            android:textSize="45sp" />
+            android:text="=0"
+            android:textColor="@color/black"
+            android:textSize="45sp"
+            android:visibility="invisible" />
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/btnBackspace"
             style="@style/ButtonBackspace"
-            android:layout_alignParentRight="true"
-            android:layout_below="@id/resultTv"
-            android:layout_marginTop="56dp"
             android:layout_width="48dp"
             android:layout_height="48dp"
+            android:layout_below="@id/resultTv"
+            android:layout_alignParentRight="true"
             android:layout_gravity="end"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginBottom="4dp"
             android:src="@drawable/ic_outline_backspace_24" />
 
     </RelativeLayout>
@@ -90,7 +93,7 @@
                 android:layout_weight="2"
                 android:textColor="@color/red"
                 android:textSize="@dimen/btnTextSize"
-                android:text="C"/>
+                android:text="AC"/>
 
             <Button
                 android:id="@+id/btnPersen"
@@ -106,7 +109,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 style="@style/OperationButton"
-                android:text="/"/>
+                android:text="÷"/>
 
         </LinearLayout>
 
@@ -140,12 +143,13 @@
                 android:text="9"/>
 
             <Button
-                android:id="@+id/btnTambah"
+                android:id="@+id/btnKali"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 style="@style/OperationButton"
-                android:text="+"/>
+                android:text="×"/>
+
 
         </LinearLayout>
 
@@ -218,12 +222,13 @@
                 android:text="3"/>
 
             <Button
-                android:id="@+id/btnKali"
+                android:id="@+id/btnTambah"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 style="@style/OperationButton"
-                android:text="x"/>
+                android:text="+"/>
+
 
         </LinearLayout>
 
@@ -233,7 +238,7 @@
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/btnTitik"
+                android:id="@+id/btnDot"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -257,7 +262,7 @@
                 android:text="000"/>
 
             <Button
-                android:id="@+id/btnSamadengan"
+                android:id="@+id/btnEqual"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
